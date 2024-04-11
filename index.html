@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Birdy,birdy,birdy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="box id1">
+		<div class="box-1">
+				<h1 class="text">Что это за моб?</h1>
+				<img src="1.jpeg" class="img mx-auto">
+			<div class="d-flex">
+				<button class="button b1">Варден</button>
+				<button class="button b2">Визер</button>
+				<button class="button b3">Древний страж</button>
+			</div>
+		</div>
+	</div>
+	<div class="box mt id2">
+		<div class="box-1">
+				<h1 class="text">Что это за крафт?</h1>
+				<img src="2.jpeg" class="img mx-auto">
+			<div class="d-flex">
+				<button class="button b4">Компас</button>
+				<button class="button b5">Наблюдатель</button>
+				<button class="button b6">Часы</button>
+			</div>
+		</div>
+	</div>
+	<div class="box mt id3">
+		<div class="box-1">
+				<h1 class="text">Что это за зелье?</h1>
+				<img src="3.jpeg" class="img mx-auto">
+			<div class="d-flex">
+				<button class="button b7">Силы</button>
+				<button class="button b8">Скорости</button>
+				<button class="button b9">Прыгучести</button>
+			</div>
+		</div>
+	</div>
+	<div class="congratulations id4">
+		<h1>Поздравляю вы истинный знаток майнкрафта</h1>
+	</div>
+	<script type="text/javascript">
+		document.querySelector('.id2').style.display = "none"
+		document.querySelector('.id3').style.display = "none"
+		document.querySelector('.id4').style.display = "none"
+		document.querySelector('.b1').onclick = function(){
+			alert('✔')
+			document.querySelector('.id2').style.display = "block";
+			document.querySelector('.id1').style.display = "none"
+		}
+		document.querySelector('.b2').onclick = function(){
+			alert('❌')
+		}
+			document.querySelector('.b3').onclick = function(){
+			alert('❌')
+		}
+		document.querySelector('.b6').onclick = function(){
+			alert('✔')
+			document.querySelector('.id3').style.display = "block";
+			document.querySelector('.id2').style.display = "none"
+		}
+		document.querySelector('.b4').onclick = function(){
+			alert('❌')
+		}
+		document.querySelector('.b5').onclick = function(){
+			alert('❌')
+		}
+		document.querySelector('.b9').onclick = function(){
+			alert('✔')
+			document.querySelector('.id4').style.display = "block";
+			document.querySelector('.id3').style.display = "none"
+		}
+		document.querySelector('.b7').onclick = function(){
+			alert('❌')
+		}
+		document.querySelector('.b8').onclick = function(){
+			alert('❌')
+		}
+	</script>
+</body>
+</html>
